@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /*espacios entre las tarjetas*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto; 
+    width: 90%;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 45px;
+    overflow: hidden;
+    display: flex;
+    flex: 0.5; /*tamaño pequeño de las tarjetas*/
+    align-items: flex-end;
+    height: 700px;
+    transition: flex 1.5s; /*propiedad tiempo*/
+}
+
+.active{
+    flex: 5; /*crecer*/    
+}
+
+.active .titulo{
+    opacity: 1;
+}
+
+.active .card1{
+    flex: 5;
+}
+
+
+.card1{
+    background-image: url("https://pm1.aminoapps.com/6626/a73df3afb14a61710b50015847507037988d9a52_hq.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card2{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/265/279/817/anime-sky-cityscape-clouds-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card3{
+    background-image: url("https://img1.wallspic.com/previews/5/9/2/4/6/164295/164295-anime-teatral_paisaje-edificio-ambiente-objeto_astronomico-x750.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card4{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/557/834/509/anime-paisaje-soulworker-hd-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card5{
+    background-image: url("https://wallpapers.com/images/hd/japanese-castle-anime-landscape-r217nepmbm4j1hci.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin-left: 25px;
+    text-shadow: 5px 2px 2px black;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+
+
+
